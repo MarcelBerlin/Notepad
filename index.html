@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>My Notes</title>
+</head>
+
+<body>
+
+    <body onload="render()">
+        <div class="header">
+            <h1>My Notes</h1>
+            <div class="header-field">
+                <img src="img/haftnotiz.png">
+                <input class="input-field" type="text" placeholder="Title.." id="title">
+                <input class="input-field" type="text" placeholder="Note.." id="note">
+                <div class="buttons">
+                    <button class="buttonstyle" onclick="inputControl()">New Post</button> <button class="buttonstyle"
+                        onclick="openArchive()">Open Archive</button>
+                </div>
+            </div>
+
+            <!-- Archiv öffnen -->
+
+            <div id="archive" class="archiv-bg d-none">
+                
+                <div id="archiveNotes" class="archive">
+                    <div class="blocks"><h2 class="archive-headline">Archive</h2></div>
+                    <div id="myarchive" class="archive-blocks"></div>
+                    <button class="buttonstyle" onclick="closeArchive()">Close Archive</button>
+                
+                </div>
+            </div>
+
+            <!-- ################################################## -->
+
+            <div id="mynotes" class="notes"></div>
+            <div id="block" class="notes"></div>
+
+            <!-- Footersektion -->
+
+        </div>
+        <div class="footer">
+            <a href="https://www.flaticon.com/de/kostenlose-icons/daten-und-ordner" title="daten und ordner Icons">Daten
+                und ordner Icons erstellt von Andrean Prabowo - Flaticon</a>
+        </div>
+
+        <!-- ################################################## -->
+
+    </body>
+
+
+
+
+</html>
